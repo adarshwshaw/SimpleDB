@@ -1,0 +1,56 @@
+[
+{
+  "directory": "D:/dev/SimpleDB/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -g -D_CRT_SECURE_NO_WARNINGS -o CMakeFiles\\devdb.dir\\main.c.obj -c D:\\dev\\SimpleDB\\main.c",
+  "file": "D:/dev/SimpleDB/main.c",
+  "output": "CMakeFiles/devdb.dir/main.c.obj"
+},
+{
+  "directory": "D:/dev/SimpleDB/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -g -D_CRT_SECURE_NO_WARNINGS -o CMakeFiles\\devdb.dir\\filemgr.c.obj -c D:\\dev\\SimpleDB\\filemgr.c",
+  "file": "D:/dev/SimpleDB/filemgr.c",
+  "output": "CMakeFiles/devdb.dir/filemgr.c.obj"
+},
+{
+  "directory": "D:/dev/SimpleDB/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -g -D_CRT_SECURE_NO_WARNINGS -o CMakeFiles\\devdb.dir\\block.c.obj -c D:\\dev\\SimpleDB\\block.c",
+  "file": "D:/dev/SimpleDB/block.c",
+  "output": "CMakeFiles/devdb.dir/block.c.obj"
+},
+{
+  "directory": "D:/dev/SimpleDB/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -g -D_CRT_SECURE_NO_WARNINGS -o CMakeFiles\\devdb.dir\\page.c.obj -c D:\\dev\\SimpleDB\\page.c",
+  "file": "D:/dev/SimpleDB/page.c",
+  "output": "CMakeFiles/devdb.dir/page.c.obj"
+},
+{
+  "directory": "D:/dev/SimpleDB/build/test",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -g -D_CRT_SECURE_NO_WARNINGS -ID:/dev/SimpleDB -o CMakeFiles\\blocktest.dir\\blocktest.c.obj -c D:\\dev\\SimpleDB\\test\\blocktest.c",
+  "file": "D:/dev/SimpleDB/test/blocktest.c",
+  "output": "test/CMakeFiles/blocktest.dir/blocktest.c.obj"
+},
+{
+  "directory": "D:/dev/SimpleDB/build/test",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -g -D_CRT_SECURE_NO_WARNINGS -ID:/dev/SimpleDB -o CMakeFiles\\blocktest.dir\\__\\block.c.obj -c D:\\dev\\SimpleDB\\block.c",
+  "file": "D:/dev/SimpleDB/block.c",
+  "output": "test/CMakeFiles/blocktest.dir/__/block.c.obj"
+},
+{
+  "directory": "D:/dev/SimpleDB/build/test",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -g -D_CRT_SECURE_NO_WARNINGS -ID:/dev/SimpleDB -o CMakeFiles\\pagetest.dir\\pagetest.c.obj -c D:\\dev\\SimpleDB\\test\\pagetest.c",
+  "file": "D:/dev/SimpleDB/test/pagetest.c",
+  "output": "test/CMakeFiles/pagetest.dir/pagetest.c.obj"
+},
+{
+  "directory": "D:/dev/SimpleDB/build/test",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -g -D_CRT_SECURE_NO_WARNINGS -ID:/dev/SimpleDB -o CMakeFiles\\pagetest.dir\\__\\page.c.obj -c D:\\dev\\SimpleDB\\page.c",
+  "file": "D:/dev/SimpleDB/page.c",
+  "output": "test/CMakeFiles/pagetest.dir/__/page.c.obj"
+},
+{
+  "directory": "D:/dev/SimpleDB/build/test",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe   -O0 -std=c11 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -g -D_CRT_SECURE_NO_WARNINGS -ID:/dev/SimpleDB -o CMakeFiles\\utiltest.dir\\utiltest.c.obj -c D:\\dev\\SimpleDB\\test\\utiltest.c",
+  "file": "D:/dev/SimpleDB/test/utiltest.c",
+  "output": "test/CMakeFiles/utiltest.dir/utiltest.c.obj"
+}
+]
