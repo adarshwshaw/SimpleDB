@@ -18,3 +18,11 @@ add_test(NAME utiltest
     COMMAND utiltest 0)
 add_test(NAME utiltest1
     COMMAND utiltest 1)
+
+
+add_executable(filemgrtest filemgrtest.c ${CMAKE_SOURCE_DIR}/filemgr.c
+    ${CMAKE_SOURCE_DIR}/block.c
+    ${CMAKE_SOURCE_DIR}/page.c)
+
+add_test(NAME filemgrtest
+    COMMAND filemgrtest 0)

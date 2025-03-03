@@ -128,7 +128,13 @@ SD_FILE FileMgr_getfile(FileMgr *mgr,const char* fileName){
 	curr=f;
     }
     if (curr.file == NULL){
-	curr.file = CreateFileA(curr.fileName, 
+
+	char fullpath[256]={0};
+	strcpy(fullpath, mgr->dbDirNm);
+	int t = strlen(mgr->dbDirNm);
+	fullpath[t++]='/';
+	strcpy(fullpath+t, curr.fileName);
+	curr.file = CreateFileA(fullpath, 
 	     GENERIC_READ|GENERIC_WRITE,
 	     0, NULL, OPEN_ALWAYS,
 	     FILE_FLAG_RANDOM_ACCESS|FILE_FLAG_WRITE_THROUGH,
