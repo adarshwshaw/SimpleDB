@@ -16,7 +16,7 @@ add_compile_options(-Wall -Wextra -g -D_CRT_SECURE_NO_WARNINGS)
 
 enable_testing()
 
-add_executable(devdb main.c filemgr.c block.c page.c)
+add_executable(devdb main.c filemgr.c block.c page.c ds.c)
 
 add_subdirectory(test)
 

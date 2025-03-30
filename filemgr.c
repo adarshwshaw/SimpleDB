@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "block.h"
+#include "ds.h"
 #include "utils.h"
 
 #ifdef _WIN64
@@ -105,9 +106,22 @@ void FileMgr_write(FileMgr *mgr,BlockId blk, Page p){
     sd_fseek(f, offset, SEEK_SET);
     FM_fwrite(p.bytes, mgr->blockSize, f);
 }
-BlockId FileMgr_append(FileMgr *mgr,const char* fileName){ return (BlockId){0};}
+BlockId FileMgr_append(FileMgr *mgr,const char* fileName){
+    int newblknum = FileMgr_len(mgr, fileName);
+    BlockId blk = blockId_create(fileName, newblknum);
+    ByteArray ba = ByteArray_create(mgr->blockSize);
+    SD_FILE file= FileMgr_getfile(mgr, fileName);
+    sd_fseek(file, blk.blknum*mgr->blockSize, 0);
+    FM_fwrite(ba.data, ba.len, file);
+    return blk;
+}
 
-uint64_t FileMgr_len(FileMgr *mgr,const char* fileName){return 0;}
+uint64_t FileMgr_len(FileMgr *mgr,const char* fileName){
+    SD_FILE file = FileMgr_getfile(mgr, fileName);
+    uint64_t len_in_bytes = GetFileSize(file, NULL);
+    uint64_t len_in_blocks = len_in_bytes/mgr->blockSize;
+    return len_in_blocks;
+}
 SD_FILE FileMgr_getfile(FileMgr *mgr,const char* fileName){
     FM_OpenFile curr={0};
     int flag=1;

@@ -1,6 +1,7 @@
 #ifndef __PAGE__
 #define __PAGE__
 
+#include "ds.h"
 #include <stdint.h>
 
 typedef struct {
@@ -15,12 +16,13 @@ Page Page_create_from_bytes(uint8_t* bytes,uint64_t size);
 int Page_getint(Page *page,uint64_t offset);
 void Page_setint(Page *page,uint64_t offset, int n);
 
-uint8_t* Page_getbytes(Page *page,int offset);
-void Page_setbytes(Page *page,uint64_t offset, uint8_t* bytes, uint32_t size);
+ByteArray Page_getbytes(Page *page,int offset);
+void Page_setbytes(Page *page,uint64_t offset, ByteArray bytes);
 
 char* Page_getstring(Page *page,uint64_t offset);
 void Page_setstring(Page *page,uint64_t offset, const char* str);
 
+#define Page_maxLength(size) ((size)+ sizeof(uint32_t))
 
 #endif
 
